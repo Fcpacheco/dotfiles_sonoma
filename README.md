@@ -16,3 +16,4 @@
 	2. Create a Dotfile branch for Linux OS
  		- .zshrc
 		- Git (config and SSH)
+		- Homebrew Install
