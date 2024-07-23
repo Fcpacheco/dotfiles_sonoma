@@ -15,4 +15,8 @@
 		- Git (config and SSH)
 	2. Create a Dotfile branch for Linux OS
 		- Git (config and SSH)
+
+## Script to include instalations to brewfile
+
+`brew bundle dump --force --describe`
 	
