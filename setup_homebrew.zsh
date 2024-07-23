@@ -29,4 +29,10 @@ eval "$(/usr/local/bin/brew shellenv)"
 # brew install --cask --no-quarantine google-chrome
 # brew install --cask --no-quarantine visual-studio-code
 
+# TODO: Keep sn eye out for a different '--no-quarantine' solution.
+# Currently, you can't do `brew bundle --no-quarantine` because it's not a valid option.
+# It's currently exported in zshrc:
+# export HOMEBREW_CASK_OPTS="--no-quarantine"
+# https://github.com/Homebrew/homebrew-bundle/issues/474 
+
 brew bundle --verbose 
