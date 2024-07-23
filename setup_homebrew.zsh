@@ -7,7 +7,10 @@ if [[ -z "$CI" ]]; then
   CI="true"
 fi
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Check for Homebrew and install if not present
+if ! command -v brew &> /dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Prevent duplicate lines in .zshrc
 if ! grep -q 'eval "$(/usr/local/bin/brew shellenv)"' ~/.zshrc; then
@@ -15,7 +18,7 @@ if ! grep -q 'eval "$(/usr/local/bin/brew shellenv)"' ~/.zshrc; then
 fi
 eval "$(/usr/local/bin/brew shellenv)"
 
-
+# Install Packages
 brew install --cask --no-quarantine httpie
 brew install httpie
 brew link httpie
