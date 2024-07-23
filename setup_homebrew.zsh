@@ -14,5 +14,5 @@ brew link httpie
 brew install bat
 
 
-brew install --cask google-chrome
-brew install --cask visual-studio-code
+brew install --cask --no-quarantine google-chrome
+brew install --cask --no-quarantine visual-studio-code
