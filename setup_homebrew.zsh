@@ -19,12 +19,14 @@ fi
 eval "$(/usr/local/bin/brew shellenv)"
 
 # Install Packages
-brew install --cask --no-quarantine httpie
-brew install httpie
-brew link httpie
+# brew install --cask --no-quarantine httpie
+# brew install httpie
+# brew link httpie
 
-brew install bat
+# brew install bat
 
 
-brew install --cask --no-quarantine google-chrome
-brew install --cask --no-quarantine visual-studio-code
+# brew install --cask --no-quarantine google-chrome
+# brew install --cask --no-quarantine visual-studio-code
+
+brew bundle --verbose 
