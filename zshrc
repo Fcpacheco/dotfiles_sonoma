@@ -33,3 +33,5 @@ function mkcd() {
 
 # ...and Other Surprises
 
+
+eval "$(/usr/local/bin/brew shellenv)"
