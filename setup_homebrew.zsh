@@ -9,8 +9,11 @@ fi
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/fabiopacheco/.zshrc
-    eval "$(/usr/local/bin/brew shellenv)"
+# Prevent duplicate lines in .zshrc
+if ! grep -q 'eval "$(/usr/local/bin/brew shellenv)"' ~/.zshrc; then
+  echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zshrc
+fi
+eval "$(/usr/local/bin/brew shellenv)"
 
 brew install --cask httpie
 brew install httpie
