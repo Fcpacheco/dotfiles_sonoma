@@ -15,12 +15,13 @@ if ! grep -q 'eval "$(/usr/local/bin/brew shellenv)"' ~/.zshrc; then
 fi
 eval "$(/usr/local/bin/brew shellenv)"
 
-brew install --cask --no-quarantine httpie -y
-brew install httpie -y
-brew link httpie -y
 
-brew install bat -y
+brew install --cask --no-quarantine httpie
+brew install httpie
+brew link httpie
+
+brew install bat
 
 
-brew install --cask --no-quarantine google-chrome -y
-brew install --cask --no-quarantine visual-studio-code -y
+brew install --cask --no-quarantine google-chrome
+brew install --cask --no-quarantine visual-studio-code
