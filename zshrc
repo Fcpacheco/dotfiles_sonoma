@@ -9,6 +9,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Create Aliases
 alias ls='ls -lAFh'
+alias eza='eza --long -a --header --inode --git --color'
+alias eza_3='eza --tree --level=3'
 
 # Custumize Prompt(s)
 PROMPT='
