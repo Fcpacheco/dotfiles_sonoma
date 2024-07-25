@@ -7,6 +7,8 @@ brew "eza"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Mac App Store command-line interface
+brew "mas"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Web browser
@@ -17,5 +19,6 @@ cask "httpie"
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
 cask "whatsapp"
+mas "Kindle", id: 302584613
 vscode "github.copilot"
 vscode "github.copilot-chat"
