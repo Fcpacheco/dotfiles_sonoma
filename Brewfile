@@ -9,6 +9,8 @@ brew "git"
 brew "httpie"
 # Mac App Store command-line interface
 brew "mas"
+# Node version management
+brew "n"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Git client focusing on productivity
