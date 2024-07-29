@@ -11,6 +11,8 @@ brew "httpie"
 brew "mas"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Git client focusing on productivity
+cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
