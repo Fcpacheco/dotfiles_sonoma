@@ -17,6 +17,8 @@ brew "n"
 brew "nano"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
