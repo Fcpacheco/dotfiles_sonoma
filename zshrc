@@ -12,6 +12,7 @@ alias ls='ls -lAFh'
 alias eza='eza --long -a --header --inode --git --color'
 alias eza_3='eza --tree --level=3'
 alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 # Custumize Prompt(s)
 PROMPT='
@@ -29,6 +30,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 function mkcd() {
 	mkdir -p "$@" && cd "$_";
 }
+
 
 
 # Use ZSH Plugins
