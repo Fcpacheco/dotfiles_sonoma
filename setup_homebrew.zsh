@@ -8,7 +8,10 @@ if [[ -z "$CI" ]]; then
 fi
 
 # Check for Homebrew and install if not present
-if ! command -v brew &> /dev/null; then
+if exists brew; then
+  echo "Homebrew is already installed."
+else
+  echo "brew doesn't exist, Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -25,11 +28,10 @@ eval "$(/usr/local/bin/brew shellenv)"
 
 # brew install bat
 
-
 # brew install --cask --no-quarantine google-chrome
 # brew install --cask --no-quarantine visual-studio-code
 
-# TODO: Keep sn eye out for a different '--no-quarantine' solution.
+# TODO: Keep an eye out for a different '--no-quarantine' solution.
 # Currently, you can't do `brew bundle --no-quarantine` because it's not a valid option.
 # It's currently exported in zshrc:
 # export HOMEBREW_CASK_OPTS="--no-quarantine"

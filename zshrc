@@ -30,7 +30,6 @@ function mkcd() {
 }
 
 
-
 # Use ZSH Plugins
 
 
