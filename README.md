@@ -18,5 +18,5 @@
 
 ## Script to include instalations to brewfile
 
-`brew bundle dump --force --describe`
+`brew bundle dump --force --describe` -> alias `bbd`
 	

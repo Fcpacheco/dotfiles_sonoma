@@ -11,6 +11,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 alias ls='ls -lAFh'
 alias eza='eza --long -a --header --inode --git --color'
 alias eza_3='eza --tree --level=3'
+alias bbd='brew bundle dump --force --describe'
 
 # Custumize Prompt(s)
 PROMPT='
