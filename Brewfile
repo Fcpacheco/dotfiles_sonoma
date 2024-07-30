@@ -11,6 +11,8 @@ brew "httpie"
 brew "mas"
 # Node version management
 brew "n"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Git client focusing on productivity
