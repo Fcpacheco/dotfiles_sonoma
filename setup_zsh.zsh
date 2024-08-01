@@ -10,7 +10,7 @@ fi
 # Instalation unnecessary; it's in the Brewfile
 
 echo "Enter superuser password to add zsh to /etc/shells"
-echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells'
+echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 
 echo "Enter superuser password to change shell to zsh"
 chsh -s '/usr/local/bin/zsh'
