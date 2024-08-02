@@ -19,7 +19,6 @@ alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
 # Remove existing alias for rm
 unalias rm
-
 # Define function for rm to move files to trash
 rm() {
   mv "$@" ~/.Trash
