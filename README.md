@@ -19,4 +19,10 @@
 ## Script to include instalations to brewfile
 
 `brew bundle dump --force --describe` -> alias `bbd`
+
+# To remove duplicated paths on terminal 
+
+type CMD+, and uncheck inheritEnv setting
+
+![alt text](image.png)
 	
