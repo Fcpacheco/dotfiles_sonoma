@@ -8,7 +8,7 @@ if [[ -z "$CI" ]]; then
 fi
 
 # Node versions are manage with `n`, which is in the Brewfile.
-# See zshrc for the N_PREFIX variable and the addition to the $PATH.
+# See zshrc for the N_PREFIX variable and the addition to the $path array.
 if exists node; then
   echo "Node $(node --version) & NPM $(npm --version) already installed."
 else
