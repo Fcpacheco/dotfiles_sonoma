@@ -17,6 +17,7 @@ alias eza='eza --long -a --header --inode --git --color'
 alias eza_3='eza --tree --level=3'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
+alias rm=trash
 
 # Custumize Prompt(s)
 PROMPT='
