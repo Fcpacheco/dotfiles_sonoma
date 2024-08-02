@@ -44,4 +44,7 @@ function mkcd() {
 # ...and Other Surprises
 
 
-eval "$(/usr/local/bin/brew shellenv)"
+# Check if brew shellenv command has been executed before
+if ! command -v brew &> /dev/null; then
+	eval "$(/usr/local/bin/brew shellenv)"
+fi
