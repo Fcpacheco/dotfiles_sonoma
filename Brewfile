@@ -27,6 +27,8 @@ brew "pyenv"
 brew "speedtest-cli"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser

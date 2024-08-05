@@ -53,7 +53,7 @@ function mkcd() {
 
 
 # Use ZSH Plugins
-
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ...and Other Surprises
 
