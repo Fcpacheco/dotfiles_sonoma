@@ -17,6 +17,7 @@ alias eza='eza --long -a --header --inode --git --color'
 alias eza_3='eza --tree --level=3'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
+alias ref='source ~/.zshrc' # Reload ZSH Config
 # Remove existing alias for rm
 # unalias rm
 # Define function for rm to move files to trash
