@@ -29,6 +29,8 @@ brew "speedtest-cli"
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
