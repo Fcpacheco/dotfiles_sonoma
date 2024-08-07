@@ -99,5 +99,6 @@ fi
 
 # Check if pyenv has already been initialized
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 

@@ -37,6 +37,8 @@ brew "n"
 brew "nano"
 # Python version management
 brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Tool Command Language
