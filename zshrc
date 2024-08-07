@@ -6,8 +6,38 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX=$HOME/.n
+export PYENV_ROOT=$HOME/.pyenv
 export PREFIX="$N_PREFIX"
 #export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+
+# Load environment variables for building Python with pyenv
+typeset -U ldflags cppflags pkg_config_path
+
+ldflags=(
+    -L/usr/local/opt/gdbm/lib
+    -L/usr/local/opt/openssl@3/lib
+    -L/usr/local/opt/zlib/lib
+    -L/usr/local/opt/llvm/lib
+)
+
+cppflags=(
+    -I/usr/local/opt/gdbm/include
+    -I/usr/local/opt/openssl@3/include
+    -I/usr/local/opt/zlib/include
+    -I/usr/local/opt/llvm/include
+)
+
+pkg_config_path=(
+    /usr/local/opt/gdbm/lib/pkgconfig
+    /usr/local/opt/openssl@3/lib/pkgconfig
+    /usr/local/opt/zlib/lib/pkgconfig
+)
+
+export LDFLAGS="${(j. .)ldflags}"
+export CPPFLAGS="${(j. .)cppflags}"
+export PKG_CONFIG_PATH="${(j.:.)pkg_config_path}"
+
+# The rest of your .zshrc configuration...
 
 
 # Change ZSH Options
@@ -42,8 +72,10 @@ typeset -U path
 
 path=(
 	$N_PREFIX/bin
+	$PYENV_ROOT/bin
 	$path
 	/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+	/usr/local/opt/make/libexec/gnubin
 )
 
 # Write Handy Functions
@@ -64,3 +96,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if ! command -v brew &> /dev/null; then
 	eval "$(/usr/local/bin/brew shellenv)"
 fi
+
+# Check if pyenv has already been initialized
+eval "$(pyenv init -)"
+
+

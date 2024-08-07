@@ -20,6 +20,12 @@
 
 `brew bundle dump --force --describe` -> alias `bbd`
 
+## Pyenv instalation
+
+If the system failed to create the pyenv folder use this:
+
+`git clone https://github.com/pyenv/pyenv.git ~/.pyenv`
+
 # To remove duplicated paths on terminal 
 
 type CMD+, and uncheck inheritEnv setting

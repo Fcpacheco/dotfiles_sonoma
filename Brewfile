@@ -1,8 +1,20 @@
 tap "homebrew/bundle"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
+# Cross-platform make
+brew "cmake"
 # Modern, maintained replacement for ls
 brew "eza"
+# GNU database manager
+brew "gdbm"
 # Distributed revision control system
 brew "git"
 # Graph visualization software from AT&T and Bell Labs
@@ -15,6 +27,8 @@ brew "httpie"
 brew "less"
 # Next-gen compiler infrastructure
 brew "llvm"
+# Utility for directing compilation
+brew "make"
 # Mac App Store command-line interface
 brew "mas"
 # Node version management
@@ -25,6 +39,10 @@ brew "nano"
 brew "pyenv"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Tool Command Language
+brew "tcl-tk"
+# General-purpose lossless data-compression library
+brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -74,3 +92,4 @@ vscode "swyddfa.esbonio"
 vscode "tomoki1207.pdf"
 vscode "trond-snekvik.simple-rst"
 vscode "twxs.cmake"
+vscode "yzhang.markdown-all-in-one"
