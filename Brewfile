@@ -57,6 +57,8 @@ cask "gitkraken"
 cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie"
+# Music streaming service
+cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
