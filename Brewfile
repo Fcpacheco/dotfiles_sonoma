@@ -57,6 +57,8 @@ cask "gitkraken"
 cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Music streaming service
 cask "spotify"
 # Open-source code editor
