@@ -71,6 +71,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 vscode "be5invis.toml"
 vscode "charliermarsh.ruff"
+vscode "christian-kohler.path-intellisense"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "github.copilot"
