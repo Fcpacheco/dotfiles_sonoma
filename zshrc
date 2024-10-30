@@ -98,6 +98,7 @@ if ! command -v brew &> /dev/null; then
 fi
 
 # Check if pyenv has already been initialized
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
