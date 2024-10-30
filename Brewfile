@@ -25,6 +25,8 @@ brew "hdf5"
 brew "httpie"
 # Pager program similar to more
 brew "less"
+# Implementation of the file(1) command
+brew "libmagic"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Utility for directing compilation
