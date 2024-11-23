@@ -53,12 +53,16 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie"
+# Desktop app for prototyping and debugging LangGraph applications locally
+cask "langgraph-studio"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Music streaming service
