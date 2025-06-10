@@ -103,3 +103,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
+
+# Created by `pipx` on 2025-05-14 12:15:35
+export PATH="$PATH:/Users/fabiopacheco/.local/bin"
